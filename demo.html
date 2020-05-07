@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Portofolio</title>
+	<link rel="stylesheet" type="text/css" href="assets/styles/style.css">
+</head>
+<body>
+	<header>
+		<div class="jumbotron">
+			<a class="navbar-brand" href="index.html"> <img src="assets/image/me.png" alt="Welcome To My Blog"> </a>
+			<h1>Demo Portofolio</h1>
+		</div>
+			<nav>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+				   <li><a href="about.html">Tentang Saya</a></li>
+				   <li><a href="demo.html">Demo Portofolio</a></li>
+				</ul>
+			</nav>
+	</header>
+	<main>
+			<div class="flex-container-column card">
+		   <div class="display">
+		   		<h1 id="displayNumber">0</h1>
+		   </div>
+	       <div class="flex-container-row">
+	           <div class="button">7</div>
+	           <div class="button">8</div>
+	           <div class="button">9</div>
+	           <div class="button negative">+/-</div>
+	       </div>
+	       <div class="flex-container-row">
+	           <div class="button">4</div>
+	           <div class="button">5</div>
+	           <div class="button">6</div>
+	           <div class="button operator">-</div>
+	       </div>
+	       <div class="flex-container-row">
+	           <div class="button">1</div>
+	           <div class="button">2</div>
+	           <div class="button">3</div>
+	           <div class="button operator">+</div>
+	       </div>
+	       <div class="flex-container-row">
+	           <div class="button clear">CE</div>
+	           <div class="button">0</div>
+	           <div class="button equals double">=</div>
+	       </div>
+	</div>
+	<div class="history card">
+       <h2>Riwayat Perhitungan</h2>
+       <table>
+           <thead>
+               <tr>
+                   <th>Angka Pertama</th>
+                   <th>Operator</th>
+                   <th>Angka Kedua</th>
+                   <th>Hasil</th>
+               </tr>
+           </thead>
+           <tbody id="historyList"></tbody>
+       </table>
+    </div>
+    
+    <script src="assets/storage.js"></script>
+	<script src="assets/kalkulator.js"></script>
+	</main>
+	<footer>
+		<p>Belajar Dasar Pemrograman Web &#169; 2020, Dicoding Academy</p>
+	</footer>
+</body>
+</html>
+
